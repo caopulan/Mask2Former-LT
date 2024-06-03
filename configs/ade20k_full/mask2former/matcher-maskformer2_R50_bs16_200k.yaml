@@ -1,0 +1,7 @@
+_BASE_: maskformer2_R50_bs16_200k.yaml
+OUTPUT_DIR: training_dir/ade20k-full_freq-matcher_r50_bs16_200k/
+MATCHER:
+  MODE: 'multi-match'
+  DATASET: 'ade20k-full'
+  T: 0.0003
+  S: 2.0

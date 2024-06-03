@@ -1,0 +1,7 @@
+_BASE_: ../maskformer2_R50_bs16_52k.yaml
+OUTPUT_DIR: training_dir/mhpv2-lt_freq-matcher_r50_bs16_52k/
+MATCHER:
+  MODE: 'multi-match'
+  DATASET: 'mhpv2-lt'
+  T: 0.0024
+  S: 2.0

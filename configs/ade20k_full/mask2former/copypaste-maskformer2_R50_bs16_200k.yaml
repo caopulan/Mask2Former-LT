@@ -1,0 +1,6 @@
+_BASE_: maskformer2_R50_bs16_200k.yaml
+OUTPUT_DIR: training_dir/ade20k-full_copypaste_r50_bs16_200k/
+INPUT:
+  COPY_PASTE:
+    ENABLED: True
+    MODE: "random"

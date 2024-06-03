@@ -1,0 +1,8 @@
+_BASE_: maskformer2_R50_bs16_52k.yaml
+OUTPUT_DIR: training_dir/mhpv2-lt_rfs_r50_bs16_52k/
+DATALOADER:
+  SAMPLER_TRAIN: "RepeatFactorTrainingSampler_Seg"
+  FREQUENCY_TYPE: "image"
+  REPEAT_THRESHOLD: 0.0012
+  ANN_TYPE: "seg"
+  REPEAT_FACTOR_FILE: "datasets/mhpv2-lt_rfs"

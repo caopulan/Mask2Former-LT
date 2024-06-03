@@ -1,0 +1,6 @@
+_BASE_: maskformer2_R50_bs16_200k.yaml
+OUTPUT_DIR: training_dir/ade20k-full_seesaw_r50_bs16_200k/
+LOSS:
+  LOSS_TYPE: 'Seesaw'
+  SEESAW_P: 1.2
+  SEESAW_Q: 1.0

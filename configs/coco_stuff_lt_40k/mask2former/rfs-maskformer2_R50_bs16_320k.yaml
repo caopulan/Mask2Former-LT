@@ -1,0 +1,8 @@
+_BASE_: maskformer2_R50_bs16_320k.yaml
+OUTPUT_DIR: training_dir/coco-stuff-lt_rfs_r50_bs16_320k/
+DATALOADER:
+  SAMPLER_TRAIN: "RepeatFactorTrainingSampler_Seg"
+  FREQUENCY_TYPE: "image"
+  REPEAT_THRESHOLD: 0.0012
+  ANN_TYPE: "seg"
+  REPEAT_FACTOR_FILE: "datasets/coco-stuff-lt_rfs"

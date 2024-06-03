@@ -1,0 +1,6 @@
+_BASE_: maskformer2_SwinL_bs16_200k.yaml
+OUTPUT_DIR: training_dir/ade20k-full_copypaste_swinl_bs16_200k/
+INPUT:
+  COPY_PASTE:
+    ENABLED: True
+    MODE: "random"
